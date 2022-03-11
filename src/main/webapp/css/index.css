@@ -1,0 +1,15 @@
+/* 设置主页面背景 */
+body{
+	background-size: 100%;
+	background-image: url(../img/3.jpg);
+}
+/* 设置第一个滚动字幕 */
+#one{
+	font: bold 35px 黑体;
+	color: red;
+}
+/* 设置第二个滚动字幕 */
+#tow{
+	color: #00FFFF;
+	font: bold 30px 黑体;
+}

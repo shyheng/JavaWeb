@@ -1,0 +1,10 @@
+/* 设置背景属性 */
+body{
+	text-align: center;
+	background-color: greenyellow;
+}
+/* 设置表格属性 */
+table{
+	background-size: 100%;
+	background-color: #00FFFF;
+}
