@@ -16,6 +16,7 @@ import java.sql.SQLException;
 
 public class loginServlet extends HttpServlet {
 
+    public static String password ;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //        1调用请求对象对请求体使用utf-8字符集进行重新编辑
@@ -52,6 +53,7 @@ public class loginServlet extends HttpServlet {
         if (result == 1){
             HttpSession session = request.getSession();
             session.setAttribute(userName,"登录成功");
+            loginServlet.password = password;
             response.sendRedirect("/index.html");
         }else {
             response.sendRedirect("/login_err.html");

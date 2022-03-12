@@ -14,6 +14,18 @@
     <servlet-name>RegServlet</servlet-name>
     <servlet-class>reg.RegServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>KcbServlet</servlet-name>
+    <servlet-class>kcb.KcbServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TimeServlet</servlet-name>
+    <servlet-class>kcb.TimeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>login.LogoutServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -24,10 +36,23 @@
     <servlet-name>RegServlet</servlet-name>
     <url-pattern>/reg</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>KcbServlet</servlet-name>
+    <url-pattern>/kcb</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TimeServlet</servlet-name>
+    <url-pattern>/time</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
 
   <!--自定义默认资源文件规则-->
   <welcome-file-list>
-    <welcome-file>week.jsp</welcome-file>
+    <welcome-file>login.html</welcome-file>
   </welcome-file-list>
 
   <!--过滤器注册-->
